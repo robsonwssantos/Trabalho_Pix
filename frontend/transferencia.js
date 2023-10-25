@@ -26,8 +26,8 @@ async function setUser(){
         option.innerText = user.name
         
         nameSelect.appendChild(option);
-    }
-}
+    };
+};
 
 async function setRecipient(){
     let users = await getUsers();
@@ -42,8 +42,8 @@ async function setRecipient(){
         option.innerText = user.name;
         
         recipientSelect.appendChild(option);
-    }
-}
+    };
+};
 
 form.addEventListener('submit', async (event) => {
     event.stopPropagation();
@@ -57,7 +57,7 @@ form.addEventListener('submit', async (event) => {
         user,
         recipient,
         value
-    }
+    };
     
     let response = await fetch('http://localhost:3333/transfer', {
             method: 'POST',
@@ -66,14 +66,14 @@ form.addEventListener('submit', async (event) => {
                 'Accept': 'application/json'
             },
             body: JSON.stringify(payload)
-        })
+        });
     
     if(response.ok){
-        alert('Transfêrencia realidada com sucesso')
+        alert('Transfêrencia realidada com sucesso');
     }else{
-        alert('Revise suas credenciais')
-    }
-})
+        alert('Opa! algo deu errado, confira se preencheu todos os dados corretamente');
+    };
+});
 
-  setUser();
-  setRecipient();
+setUser();
+setRecipient();
