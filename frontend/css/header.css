@@ -6,19 +6,9 @@ h1{
     text-align: center;
 }
 
-.button-header {
-    text-decoration: none;
-    background-color: #b3e87c;
-    border: 2px solid gray;
-    border-radius: 10px;
-    font-size: medium;
-    width: 100px;
-    margin-left: 40px;
-}
-
 .div-header {
     flex-direction: row;
     padding: 5px;
     text-align: center;
-    justify-content: center;
+    justify-content: center;    
 }
