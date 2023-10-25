@@ -1,0 +1,21 @@
+.button-index{
+    margin: 50px;
+    height: 200px;
+    width: 200px;
+    text-decoration: none;
+    background-color: #b3e87c;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: larger;
+}
+
+.button-transfer{
+    margin-left: 250px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #b3e87c;
+    border: 2px solid gray;
+    border-radius: 10px;
+    font-size: larger;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>listar</title>
+    <link rel="stylesheet" href="/frontend/css/style.css" />
+    <link rel="stylesheet" href="/frontend/css/header.css" />
+    <link rel="stylesheet" href="/frontend/css/footer.css" />
+    <link rel="stylesheet" href="/frontend/css/button.css" />
+  </head>
+  <header>
+    <h1>Faz o Pix - Crie_TI</h1>
+    <div class="div-header">
+      <button class="button-header"><a href="index.html">Home</a></button>
+      <button class="button-header"><a href="transferencia.html">Trasferência</a></button>
+    </div>
+  </header>
+  <body>
+    <section class="section">
+    <form id="form-list" class="form-list">
+      <div id="header-table" class="header-table">
+        <label for="user">Selecione o usuário
+          <select name="user" id="name-select-list"></select>
+        </label>
+      </div>
+
+      <div>
+        <label for="type">Tipo de trasferência </label>
+        <select name="type" id="type-select" >
+          <option value="" selected disabled>Selecione</option>
+        </select>
+      </div>
+
+      </div>
+      <div>
+        <button id="button-transfer-list">Buscar</button>
+      </div>
+    </form>
+<div class="rolagem">
+    <table class="table-list" id="table-list">
+      <thead>
+        <tr>
+          <th>Remetente</th>
+          <th>Destinatário</th>
+          <th>Data</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+
+      <tbody id="body-table"></tbody>
+    </table>
+  </div>
+  </section>
+  </body>
+  <script src="listar.js"></script>
+  <footer>
+    <h2>Copyright © 2023 - 2025 Todos os direitos reservados | Robson Schneider </h2>
+  </footer>
+</html>
